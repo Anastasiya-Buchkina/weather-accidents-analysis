@@ -1,1 +1,7 @@
-
+pandas>=2.0
+requests>=2.31
+python-dotenv>=1.0
+geopy>=2.4
+sqlalchemy>=2.0
+psycopg2-binary>=2.9
+lxml>=4.9
