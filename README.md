@@ -143,8 +143,7 @@ pip install -r requirements.txt`
 <a id="stage1-2"></a>
 #### Этап 1.2. Обогащение справочной информации по городам
 
-**Python-скрипт:**
-- `scripts/load_cities_dadata_okato_oktmo.py`
+**Python-скрипт:** [`load_cities_dadata_okato_oktmo.py`](scripts/load_cities_dadata_okato_oktmo.py)
 
 **Источник данных:**
 - API DaData  
@@ -196,8 +195,7 @@ pip install -r requirements.txt`
 <a id="stage1-3"></a>
 #### Этап 1.3. Загрузка погодных данных
 
-**Python-скрипт:**
-- `scripts/load_weather_buffer.py`
+**Python-скрипт:** [`load_weather_buffer.py`](scripts/load_weather_buffer.py)
 
 **Источник данных:**
 - API Open-Meteo (Archive API)  
@@ -267,8 +265,7 @@ pip install -r requirements.txt`
 <a id="stage1-4"></a>
 #### Этап 1.4. Загрузка данных о ДТП
 
-**Python-скрипт:**
-- `scripts/load_dtp_to_buffer.py`
+**Python-скрипт:** [`load_dtp_to_buffer.py`](scripts/load_dtp_to_buffer.py)
 
 **Источник данных:**
 - API ГИБДД  
@@ -350,6 +347,8 @@ pip install -r requirements.txt`
 
 База данных PostgreSQL развернута на платформе **Supabase**.
 
+**SQL-файл:** [`schema_tables.sql`](sql/schema_tables.sql)
+
 **Диаграмма базы данных:**
 
 ![Data Model](images/data_model_weather_accidents.png)
@@ -419,8 +418,7 @@ pip install -r requirements.txt`
 <a id="stage3-1"></a>
 #### Этап 3.1. Обработка погодных данных
 
-**Python-скрипт:**
-- `scripts/load_weather_conditions.py`
+**Python-скрипт:** [`load_weather_conditions.py`](scripts/load_weather_conditions.py)
 
 **Источник данных:**
 - буферная таблица `public.weather_buffer`
@@ -493,8 +491,7 @@ pip install -r requirements.txt`
 
 **Загрузка основной информации о ДТП в `dtp_main`**
 
-**Python-скрипт:**
-- `scripts/load_dtp_main.py`
+**Python-скрипт:** [`load_dtp_main.py`](scripts/load_dtp_main.py)
 
 **Источник данных:**
 - буферная таблица `public.dtp_buffer`
@@ -570,8 +567,7 @@ pip install -r requirements.txt`
 ---
 **Загрузка данных о местоположении и дорожных условиях в `dtp_locations`**
 
-**Python-скрипт:**
-- `scripts/load_dtp_locations.py`
+**Python-скрипт:** [`load_dtp_locations.py`](scripts/load_dtp_locations.py)
 
 **Источник данных:**
 - буферная таблица `public.dtp_buffer`
@@ -663,8 +659,7 @@ pip install -r requirements.txt`
 ---
 **Загрузка данных об участниках ДТП в `dtp_participants`**
 
-**Python-скрипт:**
-- `scripts/load_dtp_participants.py`
+**Python-скрипт:** [`load_dtp_participants.py`](scripts/load_dtp_participants.py)
 
 **Источник данных:**
 - буферная таблица `public.dtp_buffer`
@@ -765,8 +760,7 @@ pip install -r requirements.txt`
 ---
 **Загрузка данных о транспортных средствах в `dtp_vehicles`**
 
-**Python-скрипт:**
-- `scripts/load_dtp_vehicles.py`
+**Python-скрипт:** [`load_dtp_vehicles.py`](scripts/load_dtp_vehicles.py)
 
 **Источник данных:**
 - буферная таблица `public.dtp_buffer`
@@ -878,8 +872,7 @@ pip install -r requirements.txt`
 <a id="stage4"></a>
 ### 📊 Этап 4. Подготовка аналитических витрин
 
-**SQL-файл:**
-- `sql/schema_views.sql`
+**SQL-файл:** [`schema_views.sql`](sql/schema_views.sql)
 
 **Подключение к базе данных**
 - Использовалась PostgreSQL, развернутая на платформе **Supabase**
