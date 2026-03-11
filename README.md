@@ -82,8 +82,7 @@ pip install -r requirements.txt`
 <a id="stage1-1"></a>
 #### Этап 1.1. Сбор списка городов
 
-**Python-скрипт:**
-- `scripts/load_cities_from_wiki.py`
+**Python-скрипт:** [`load_cities_from_wiki.py`](scripts/load_cities_from_wiki.py)
 
 **Источник данных:**
 - Wikipedia: список городов России  
